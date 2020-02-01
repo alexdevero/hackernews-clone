@@ -1,7 +1,7 @@
 {
   "name": "hackernews-clone",
   "version": "0.0.1",
-  "description": "A clone of Hacker News web built with React and GraphQL.",
+  "description": "A clone of Hacker News built with React & TypeScript.",
   "license": "MIT",
   "private": false,
   "repository": {
@@ -16,13 +16,6 @@
     "name": "Alex Devero",
     "url": "https://alexdevero.com/"
   },
-  "contributors": [
-    {
-      "name": "",
-      "email": "",
-      "url": ""
-    }
-  ],
   "keywords": [
     "graphql",
     "javascript",
@@ -37,11 +30,18 @@
     "npm": ">=6.0",
     "yarn": ">=1.0"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "main": "main.js",
   "scripts": {
-    "build": "echo \"No script specified\"",
-    "start": "echo \"No script specified\"",
-    "test": "echo \"No script specified\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "dependencies": {},
   "devDependencies": {}
